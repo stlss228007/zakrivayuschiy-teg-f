@@ -1,0 +1,37 @@
+:root {
+  --main-font: 'Inter', sans-serif;
+  --accent-font: 'PressStart2P', monospace;
+  
+  --main-font-weight: 410;
+  --title-font-weight: 715;
+  
+  --accent-color: #000;
+  --background-color: #fff;
+  --text-color: #fff;
+  --heart-contour: #000;
+  --heart-active: #FF0000;
+  --heart-core: transparent;
+  --heart-body: transparent;
+  --heart-sparks: #FF0000;
+  --label-color: #000;
+  --label-stroke: #fff;
+  --button-text: #000;
+  --floppy-color: #000;
+  
+  --page-background: 
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      #d3d3d3 0px 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      180deg,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+}
