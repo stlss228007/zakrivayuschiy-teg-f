@@ -411,6 +411,38 @@
   animation: sparks-show 0.3s ease-in 0.3s;
 }
 
+.card__image--filter-1 {
+  filter: brightness(1.1) contrast(1.1);
+}
+
+.card__image--filter-2 {
+  filter: grayscale(0.8) sepia(0.2);
+}
+
+.card__image--filter-3 {
+  filter: hue-rotate(45deg) saturate(1.5);
+}
+
+.card__image--filter-4 {
+  filter: blur(1px) brightness(0.9);
+}
+
+.card__image--filter-5 {
+  filter: invert(0.1) sepia(0.3);
+}
+
+.card__image--filter-6 {
+  filter: contrast(1.3) brightness(0.95) saturate(1.2);
+}
+
+.card__image--filter-7 {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.3));
+}
+
+.card__image--filter-8 {
+  filter: none;
+}
+
 @keyframes heart-scale {
   0% {
     transform: scale(1);
