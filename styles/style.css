@@ -40,6 +40,7 @@
   text-transform: uppercase;
   margin: 0 0 20px 0;
   color: var(--accent-color);
+  text-decoration: none;
 }
 
 .header__title {
@@ -302,9 +303,16 @@
 
 .dialog {
   inline-size: 357px;
-  padding: 30px;
+  padding: 0;
   background: var(--background-color);
   border: 2px solid var(--accent-color);
+}
+
+.dialog__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
 }
 
 .dialog::backdrop {
@@ -316,7 +324,6 @@
   grid-template-columns: min-content 1fr;
   gap: 20px;
   align-items: center;
-  margin-block-end: 30px;
 }
 
 .dialog__icon svg {
@@ -335,80 +342,11 @@
 .dialog__button {
   inline-size: 100%;
   padding: 12.5px;
+  text-transform: lowercase;
+}
+
+.dialog__button::first-letter {
   text-transform: uppercase;
-}
-
-.like-icon .contour {
-  fill: var(--heart-contour);
-  transition: fill 0.1s linear 0s;
-}
-
-.like-icon .core {
-  fill: var(--heart-core);
-  transition: fill 0.3s linear 0.03s;
-}
-
-.like-icon .main-body {
-  fill: var(--heart-body);
-  transition: fill 0.3s linear 0s;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-  fill: var(--heart-sparks);
-  transition: opacity 0.3s ease-in;
-}
-
-.like-icon:hover .core {
-  fill: var(--heart-contour);
-  transition: fill 0.3s linear 0s;
-}
-
-.like-icon:hover .main-body {
-  fill: var(--heart-contour);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon:hover .contour {
-  fill: var(--heart-contour);
-}
-
-.like-icon:active .core {
-  fill: var(--heart-active);
-  transition: fill 0.3s linear 0s;
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-active);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon:active .contour {
-  fill: var(--heart-contour);
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-active);
-  transition: fill 0.3s linear 0s;
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-active);
-  transition: fill 0.3s linear 0.05s;
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-active);
-  transition: fill 0.3s linear 0.06s;
-}
-
-.like-icon.is-liked .heart {
-  transform-origin: center;
-  animation: heart-scale 0.3s ease-in 0.1s;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks-show 0.3s ease-in 0.3s;
 }
 
 .card__image--filter-1 {
@@ -443,27 +381,6 @@
   filter: none;
 }
 
-@keyframes heart-scale {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.25);
-  }
-}
-
-@keyframes sparks-show {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @media (width <= 375px) {
   .header {
     inline-size: 375px;
@@ -475,12 +392,12 @@
   }
 
   .header__logo {
-    font-size: 55px;
+    font-size: 49px;
     margin: 0 0 20px 0;
   }
 
   .header__title {
-    font-size: 21px;
+    font-size: 14px;
   }
 
   .content {

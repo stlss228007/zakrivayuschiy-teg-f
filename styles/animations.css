@@ -1,64 +1,64 @@
 .like-icon .contour {
-  fill: #000;
+  fill: var(--heart-contour);
   transition: fill 0.1s linear 0s;
 }
 
 .like-icon .core {
-  fill: transparent;
+  fill: var(--heart-core);
   transition: fill 0.3s linear 0.03s;
 }
 
 .like-icon .main-body {
-  fill: transparent;
+  fill: var(--heart-body);
   transition: fill 0.3s linear 0s;
 }
 
 .like-icon .sparks {
   opacity: 0;
-  fill: #FF0000;
+  fill: var(--heart-sparks);
   transition: opacity 0.3s ease-in;
 }
 
 .like-icon:hover .core {
-  fill: #000;
+  fill: var(--heart-contour);
   transition: fill 0.3s linear 0s;
 }
 
 .like-icon:hover .main-body {
-  fill: #000;
+  fill: var(--heart-contour);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:hover .contour {
-  fill: #000;
+  fill: var(--heart-contour);
 }
 
 .like-icon:active .core {
-  fill: #FF0000;
+  fill: var(--heart-active);
   transition: fill 0.3s linear 0s;
 }
 
 .like-icon:active .main-body {
-  fill: #FF0000;
+  fill: var(--heart-active);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon:active .contour {
-  fill: #000;
+  fill: var(--heart-contour);
 }
 
 .like-icon.is-liked .core {
-  fill: #FF0000;
+  fill: var(--heart-active);
   transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .main-body {
-  fill: #FF0000;
+  fill: var(--heart-active);
   transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .contour {
-  fill: #FF0000;
+  fill: var(--heart-active);
   transition: fill 0.3s linear 0.06s;
 }
 

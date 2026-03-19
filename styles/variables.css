@@ -3,7 +3,7 @@
   --accent-font: 'PressStart2P', monospace;
   
   --main-font-weight: 410;
-  --title-font-weight: 715;
+  --title-font-weight: 785;
   
   --accent-color: #000;
   --background-color: #fff;
@@ -15,8 +15,6 @@
   --heart-sparks: #FF0000;
   --label-color: #000;
   --label-stroke: #fff;
-  --button-text: #000;
-  --floppy-color: #000;
   
   --page-background: 
     repeating-linear-gradient(
